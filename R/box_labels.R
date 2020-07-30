@@ -9,6 +9,3 @@ box.lbls <- function(x, color = NULL) {
     text(x = 0.65, y = max(x), labels = paste("Max = ", max(x)))
 }
 
-x <- c(1, 6, 2, 9, 18, 12, 6, 3, 10, 21, 2, 3, 7, 1)
-
-box.lbls(x, color = "lightblue")
