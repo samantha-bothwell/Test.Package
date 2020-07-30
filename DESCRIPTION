@@ -1,11 +1,10 @@
 Package: test.package
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Boxplot Labels
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
+Author: Samantha Bothwell
+Maintainer: The package maintainer <samantha.bothwell@cuanschutz.edu>
+Description: This package labels the median, 1st and 3rd quantiles and the min and max on a boxplot for a given vector of values.
 License: What license is it under?
 Encoding: UTF-8
 LazyData: true
