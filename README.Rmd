@@ -1,0 +1,22 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# Boxplot labels
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The goal of Test package is to assign labels to a boxplot for Median, Q1, Q3, Minimum and Maxiumum. 
+
