@@ -1,4 +1,4 @@
----
+  ---
 output: github_document
 ---
 
@@ -19,4 +19,11 @@ knitr::opts_chunk$set(
 <!-- badges: end -->
 
 The goal of Test package is to assign labels to a boxplot for Median, Q1, Q3, Minimum and Maxiumum. 
+
+An example of it's functionality is given below.
+
+```{r, echo = TRUE}
+library(test.package)
+box.lbls(rnorm(1000), color = "pink")
+```
 
