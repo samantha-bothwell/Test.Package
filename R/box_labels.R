@@ -1,6 +1,6 @@
 
 
-box.lbls <- function(x, color = NULL) {
+box_lbls <- function(x, color = NULL) {
     boxplot(x, col = color)
     text(x = 0.65, y = median(x), labels = paste("Median = ", median(x)))
     text(x = 0.65, y = quantile(x, 0.25), labels = paste("Q1 = ", quantile(x, 0.25)))
