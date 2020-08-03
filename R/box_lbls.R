@@ -4,8 +4,8 @@
 #' are the minimum, maximum, Q1, Q3 and median. To use the function, you must specify a vector \code{x}.
 #'
 #'
-#' @param x for specifying data from which the boxplots are to be produced. Either a numeric vector, or a single list containing such vectors.
-#' @param color the color of the body of the boxplot. By default, the boxplot color is the same as the background color.
+#' @param x A numeric vector for specifying data from which the boxplots are to be produced
+#' @param color The color of the body of the boxplot. By default, the boxplot color is the same as the background color.
 #'
 #'
 #' @author Samantha Bothwell \email{samantha.bothwell@@cuanschutz.edu}
