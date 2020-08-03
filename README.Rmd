@@ -24,6 +24,6 @@ An example of it's functionality is given below.
 
 ```{r, echo = TRUE}
 library(test.package)
-box.lbls(rnorm(1000), color = "pink")
+box_lbls(rnorm(1000), color = "pink")
 ```
 
