@@ -8,3 +8,6 @@ Description: This package labels the median, 1st and 3rd quantiles and the min a
 License: What license is it under?
 Encoding: UTF-8
 LazyData: true
+
+Imports:
+    ggplot2
