@@ -11,7 +11,7 @@
 #' @author Samantha Bothwell \email{samantha.bothwell@@cuanschutz.edu}
 #' @export
 #'
-#' @importFrom ggplot2
+#' @import ggplot2
 #'
 #' @examples
 #' ggbox_lbls(rnorm(1000), color = "pink")
