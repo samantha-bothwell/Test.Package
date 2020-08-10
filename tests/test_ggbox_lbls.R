@@ -5,7 +5,5 @@ context("ggbox_lbls")
 test_that("ggbox_lbls only takes numeric vector values", {
   x <- rnorm(100, 0, 1)
   g <- ggbox_lbls(x, color = "lightblue")
-  expect_true(class(g), "ggplot")
+  expect_equal(class(g)[1], "gg")
 })
-
-test_check("test.package")
