@@ -20,11 +20,13 @@
 #'
 
 box_lbls <- function(x, color = NULL) {
-    b <- boxplot(x, col = color)
+    boxplot(x, col = 'lightblue')
     text(x = 0.65, y = median(x), labels = paste("Median = ", round(median(x), 2)))
     text(x = 0.65, y = quantile(x, 0.25), labels = paste("Q1 = ", round(quantile(x, 0.25),2)))
     text(x = 0.65, y = quantile(x, 0.75), labels = paste("Q3 = ", round(quantile(x, 0.75),2)))
     text(x = 0.65, y = min(x), labels = paste("Min = ", round(min(x),2)))
     text(x = 0.65, y = max(x), labels = paste("Max = ", round(max(x),2)))
+    b <- recordPlot()
+    return(b)
 }
 

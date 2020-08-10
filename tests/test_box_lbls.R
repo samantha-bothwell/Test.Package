@@ -4,7 +4,8 @@ library(test.package)
 context("box_lbls")
 test_that("box_lbls only takes numeric vector values", {
   x <- rnorm(100, 0, 1)
-  expect_true(is.numeric(x))
+  b <- box_lbls(x, color = "lightblue")
+  expect_equal(class(b), "recordedplot")
 })
 
 test_check("test.package")
