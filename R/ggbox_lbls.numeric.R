@@ -1,9 +1,9 @@
-#' Summary Labels for Boxplots in GGplot for class Samantha
+#' Summary Labels for Boxplots in GGplot for class numeric
 #'
 #' This function labels summary statistics on a ggplot boxplot. The summary statistics reported
 #' are the minimum, maximum, Q1, Q3 and median. To use the function, you must specify a vector \code{x}.
 #'
-#' @param obj samantha object to be plotted
+#' @param obj numeric object to be plotted
 #' @param x A numeric vector for specifying data from which the boxplots are to be produced
 #' @param color The color of the body of the boxplot. By default, the boxplot color is the same as the background color.
 #'
@@ -20,9 +20,9 @@
 #' ggbox_lbls(x, color = "steelblue1")
 #'
 
-ggbox_lbls.samantha <- function(obj, x, color = NULL) {
+ggbox_lbls.numeric <- function(obj, x, color = NULL) {
 
-  samantha.obj <- obj
+  numeric.obj <- obj
 
   x <- as.data.frame(x)
   g <- ggplot(data = x, aes(x = "", y = x)) +

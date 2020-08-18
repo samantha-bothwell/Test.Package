@@ -20,15 +20,8 @@
 #' ggbox_lbls(x, color = "steelblue1")
 #'
 
-ggbox_lbls <- function(x, color = NULL) {
-  x <- as.data.frame(x)
-  g <- ggplot(data = x, aes(x = "", y = x)) +
-    geom_boxplot(fill = color) +
-    annotate("text", x = 0.8, y = quantile(x[,1], 0.55), label =  paste("Median = ", round(median(x[,1]),2))) +
-    annotate("text", x = 0.8, y = quantile(x[,1], 0.30), label =  paste("Q1 = ", round(quantile(x[,1], 0.25),2))) +
-    annotate("text", x = 0.8, y = quantile(x[,1], 0.80), label =  paste("Q3 = ", round(quantile(x[,1], 0.75), 2))) +
-    annotate("text", x = 0.8, y = min(x[,1]), label =  paste("Min = ", round(min(x[,1]),2))) +
-    annotate("text", x = 0.8, y = max(x[,1]), label =  paste("Max = ", round(max(x[,1]),2)))
+ggbox_lbls <- function(obj, ...) {
+  UseMethod("ggbox_lbls")
 }
 
 
