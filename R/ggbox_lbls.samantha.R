@@ -1,4 +1,4 @@
-#' Summary Labels for Boxplots in GGplot
+#' Summary Labels for Boxplots in GGplot for class Samantha
 #'
 #' This function labels summary statistics on a ggplot boxplot. The summary statistics reported
 #' are the minimum, maximum, Q1, Q3 and median. To use the function, you must specify a vector \code{x}.
@@ -30,5 +30,3 @@ ggbox_lbls <- function(x, color = NULL) {
     annotate("text", x = 0.8, y = min(x[,1]), label =  paste("Min = ", round(min(x[,1]),2))) +
     annotate("text", x = 0.8, y = max(x[,1]), label =  paste("Max = ", round(max(x[,1]),2)))
 }
-
-

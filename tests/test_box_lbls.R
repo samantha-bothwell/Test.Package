@@ -8,4 +8,3 @@ test_that("box_lbls only takes numeric vector values", {
   expect_equal(class(b), "recordedplot")
 })
 
-test_check("test.package")
