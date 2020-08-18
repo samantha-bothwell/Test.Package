@@ -5,7 +5,7 @@ Version: 0.1.0
 Author: Samantha Bothwell
 Maintainer: The package maintainer <samantha.bothwell@cuanschutz.edu>
 Description: This package labels the median, 1st and 3rd quantiles and the min and max on a boxplot for a given vector of values.
-License: What license is it under?
+License: MIT License
 Encoding: UTF-8
 LazyData: true
 Imports:
