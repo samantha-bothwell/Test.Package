@@ -11,6 +11,7 @@
 #' @export
 #'
 #' @import ggplot2
+#' @export ggbox_lbls
 #'
 #' @examples
 #' ggbox_lbls(rnorm(1000), color = "pink")
