@@ -5,6 +5,7 @@
 #'
 #'
 #' @param obj object to be plotted. Currently, allowed data types are \code{samantha} and \code{numeric}.
+#' @param ... additional arguments passed to plotting functions
 #'
 #'
 #' @author Samantha Bothwell \email{samantha.bothwell@@cuanschutz.edu}
@@ -14,10 +15,15 @@
 #' @export ggbox_lbls
 #'
 #' @examples
+#'
+#' \dontrun{
+#'
 #' ggbox_lbls(rnorm(1000), color = "pink")
 #'
 #' x <- c(1,6,3,9,7,5,9,16,4)
 #' ggbox_lbls(x, color = "steelblue1")
+#'
+#'}
 #'
 
 ggbox_lbls <- function(obj, ...) {

@@ -4,14 +4,14 @@
 \alias{ggbox_lbls.samantha}
 \title{Summary Labels for Boxplots in GGplot for class Samantha}
 \usage{
-\method{ggbox_lbls}{samantha}(obj, x, color = NULL)
+\method{ggbox_lbls}{samantha}(obj, color = NULL, ...)
 }
 \arguments{
 \item{obj}{samantha object to be plotted}
 
-\item{x}{A numeric vector for specifying data from which the boxplots are to be produced}
-
 \item{color}{The color of the body of the boxplot. By default, the boxplot color is the same as the background color.}
+
+\item{...}{additional arguments passed to plotting functions}
 }
 \description{
 This function labels summary statistics on a ggplot boxplot. The summary statistics reported

@@ -7,19 +7,24 @@
 ggbox_lbls(obj, ...)
 }
 \arguments{
-\item{x}{A numeric vector for specifying data from which the boxplots are to be produced}
+\item{obj}{object to be plotted. Currently, allowed data types are \code{samantha} and \code{numeric}.}
 
-\item{color}{The color of the body of the boxplot. By default, the boxplot color is the same as the background color.}
+\item{...}{additional arguments passed to plotting functions}
 }
 \description{
 This function labels summary statistics on a ggplot boxplot. The summary statistics reported
 are the minimum, maximum, Q1, Q3 and median. To use the function, you must specify a vector \code{x}.
 }
 \examples{
+
+\dontrun{
+
 ggbox_lbls(rnorm(1000), color = "pink")
 
 x <- c(1,6,3,9,7,5,9,16,4)
 ggbox_lbls(x, color = "steelblue1")
+
+}
 
 }
 \author{
