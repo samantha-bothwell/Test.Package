@@ -23,7 +23,7 @@
 ggbox_lbls.samantha <- function(obj, color = "lightblue", ...) {
 
   samantha.obj <- obj
-  class(samantha.obj) <- "numeric"
+  class(samantha.obj) <- "numeric" # NOTE: I'm unsure how to make this into a boxplot if it's not a numeric class
 
   samantha.obj <- as.data.frame(samantha.obj)
   g <- ggplot(data = samantha.obj, aes(x = "", y = samantha.obj)) +
