@@ -23,6 +23,7 @@
 ggbox_lbls.samantha <- function(obj, color = NULL, ...) {
 
   samantha.obj <- obj
+  class(samantha.obj) <- "numeric"
 
   samantha.obj <- as.data.frame(samantha.obj)
   g <- ggplot(data = samantha.obj, aes(x = "", y = samantha.obj)) +
