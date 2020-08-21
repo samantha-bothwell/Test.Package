@@ -4,7 +4,7 @@
 #' are the minimum, maximum, Q1, Q3 and median. To use the function, you must specify a vector \code{x}.
 #'
 #' @param obj samantha object to be plotted
-#' @param color The color of the body of the boxplot. By default, the boxplot color is the same as the background color.
+#' @param color The color of the body of the boxplot. By default, the boxplot color is lightblue.
 #' @param ... additional arguments passed to plotting functions
 #'
 #'
@@ -20,7 +20,7 @@
 #' ggbox_lbls(x, color = "steelblue1")
 #'
 
-ggbox_lbls.samantha <- function(obj, color = NULL, ...) {
+ggbox_lbls.samantha <- function(obj, color = "lightblue", ...) {
 
   samantha.obj <- obj
   class(samantha.obj) <- "numeric"

@@ -4,12 +4,12 @@
 \alias{ggbox_lbls.numeric}
 \title{Summary Labels for Boxplots in GGplot for class numeric}
 \usage{
-\method{ggbox_lbls}{numeric}(obj, color = NULL, ...)
+\method{ggbox_lbls}{numeric}(obj, color = "lightblue", ...)
 }
 \arguments{
 \item{obj}{numeric object to be plotted}
 
-\item{color}{The color of the body of the boxplot. By default, the boxplot color is the same as the background color.}
+\item{color}{The color of the body of the boxplot. By default, the boxplot color is lightblue.}
 
 \item{...}{additional arguments passed to plotting functions}
 }
