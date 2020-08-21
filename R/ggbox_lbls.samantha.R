@@ -25,11 +25,12 @@ ggbox_lbls.samantha <- function(obj, color = NULL, ...) {
   samantha.obj <- obj
 
   samantha.obj <- as.data.frame(samantha.obj)
-  g <- ggplot(data = samantha.obj, aes(samantha.obj = "", y = samantha.obj)) +
-    geom_boxplot(fill = color) +
-    annotate("text", samantha.obj = 0.8, y = quantile(samantha.obj[,1], 0.55), label =  paste("Median = ", round(median(samantha.obj[,1]),2))) +
-    annotate("text", samantha.obj = 0.8, y = quantile(samantha.obj[,1], 0.30), label =  paste("Q1 = ", round(quantile(samantha.obj[,1], 0.25),2))) +
-    annotate("text", samantha.obj = 0.8, y = quantile(samantha.obj[,1], 0.80), label =  paste("Q3 = ", round(quantile(samantha.obj[,1], 0.75), 2))) +
-    annotate("text", samantha.obj = 0.8, y = min(samantha.obj[,1]), label =  paste("Min = ", round(min(samantha.obj[,1]),2))) +
-    annotate("text", samantha.obj = 0.8, y = max(samantha.obj[,1]), label =  paste("Max = ", round(max(samantha.obj[,1]),2)))
+  g <- ggplot(data = samantha.obj, aes(x = "", y = samantha.obj)) +
+    geom_boxplot(fill = color, notch = TRUE) +
+    annotate("text", x = 0.8, y = quantile(samantha.obj[,1], 0.55), label =  paste("Median = ", round(median(samantha.obj[,1]),2))) +
+    annotate("text", x = 0.8, y = quantile(samantha.obj[,1], 0.30), label =  paste("Q1 = ", round(quantile(samantha.obj[,1], 0.25),2))) +
+    annotate("text", x = 0.8, y = quantile(samantha.obj[,1], 0.80), label =  paste("Q3 = ", round(quantile(samantha.obj[,1], 0.75), 2))) +
+    annotate("text", x = 0.8, y = min(samantha.obj[,1]), label =  paste("Min = ", round(min(samantha.obj[,1]),2))) +
+    annotate("text", x = 0.8, y = max(samantha.obj[,1]), label =  paste("Max = ", round(max(samantha.obj[,1]),2)))
+  g
 }

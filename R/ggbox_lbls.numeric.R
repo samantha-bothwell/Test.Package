@@ -25,11 +25,11 @@ ggbox_lbls.numeric <- function(obj, color = NULL, ...) {
   numeric.obj <- obj
 
   numeric.obj <- as.data.frame(numeric.obj)
-  g <- ggplot(data = numeric.obj, aes(numeric.obj = "", y = numeric.obj)) +
+  g <- ggplot(data = numeric.obj, aes(x = "", y = numeric.obj)) +
     geom_boxplot(fill = color) +
-    annotate("text", numeric.obj = 0.8, y = quantile(numeric.obj[,1], 0.55), label =  paste("Median = ", round(median(numeric.obj[,1]),2))) +
-    annotate("text", numeric.obj = 0.8, y = quantile(numeric.obj[,1], 0.30), label =  paste("Q1 = ", round(quantile(numeric.obj[,1], 0.25),2))) +
-    annotate("text", numeric.obj = 0.8, y = quantile(numeric.obj[,1], 0.80), label =  paste("Q3 = ", round(quantile(numeric.obj[,1], 0.75), 2))) +
-    annotate("text", numeric.obj = 0.8, y = min(numeric.obj[,1]), label =  paste("Min = ", round(min(numeric.obj[,1]),2))) +
-    annotate("text", numeric.obj = 0.8, y = max(numeric.obj[,1]), label =  paste("Max = ", round(max(numeric.obj[,1]),2)))
+    annotate("text", x = 0.8, y = quantile(numeric.obj[,1], 0.55), label =  paste("Median = ", round(median(numeric.obj[,1]),2))) +
+    annotate("text", x = 0.8, y = quantile(numeric.obj[,1], 0.30), label =  paste("Q1 = ", round(quantile(numeric.obj[,1], 0.25),2))) +
+    annotate("text", x = 0.8, y = quantile(numeric.obj[,1], 0.80), label =  paste("Q3 = ", round(quantile(numeric.obj[,1], 0.75), 2))) +
+    annotate("text", x = 0.8, y = min(numeric.obj[,1]), label =  paste("Min = ", round(min(numeric.obj[,1]),2))) +
+    annotate("text", x = 0.8, y = max(numeric.obj[,1]), label =  paste("Max = ", round(max(numeric.obj[,1]),2)))
 }
