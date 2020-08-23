@@ -17,7 +17,7 @@
 #' ggbox_lbls(rnorm(1000), color = "pink")
 #'
 #' x <- c(1,6,3,9,7,5,9,16,4)
-#' ggbox_lbls(x, color = "steelblue1")
+#' ggbox_lbls(x)
 #'
 
 ggbox_lbls.numeric <- function(obj, color = "lightblue", ...) {

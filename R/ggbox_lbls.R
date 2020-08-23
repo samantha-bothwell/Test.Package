@@ -20,8 +20,9 @@
 #'
 #' ggbox_lbls(rnorm(1000), color = "pink")
 #'
-#' x <- c(1,6,3,9,7,5,9,16,4)
-#' ggbox_lbls(x, color = "steelblue1")
+#' x <- runif(1000, 0, 10)
+#' class(x) <- "samantha"
+#' ggbox_lbls(x)
 #'
 #'}
 #'
