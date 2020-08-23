@@ -1,6 +1,6 @@
 #' Summary Labels for Boxplots in GGplot for class Samantha
 #'
-#' This function labels summary statistics on a ggplot boxplot. The summary statistics reported
+#' This function labels summary statistics on a ggplot boxplot using notches. The summary statistics reported
 #' are the minimum, maximum, Q1, Q3 and median. To use the function, you must specify a vector \code{x}.
 #'
 #' @param obj samantha object to be plotted
