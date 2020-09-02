@@ -9,7 +9,7 @@ vignette: >
   \usepackage[utf8]{inputenc}}
 ---
 
-```{r, include = FALSE}
+```{r, include = FALSE, message = FALSE, warning = FALSE}
 knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>"
@@ -29,8 +29,17 @@ x <- runif(1000, 0, 10)
 box_lbls(x, col = "pink")
 ```
 
+This can also be done in ggplot for either class numeric or class 'samantha'. For class 'samantha', the ggboxplot will have notches, which indicate a confidence interval around the median.  
+
 ```{r}
 x <- runif(1000, 0, 10)
+# Class numeric ggplot
+g.num <- ggbox_lbls(x) 
+
+# Class Samantha ggplot
 class(x) <- "samantha"
-ggbox_lbls(x)
+g.sam <- ggbox_lbls(x)
+
+require(gridExtra)
+grid.arrange(g.num, g.sam, ncol = 2)
 ```
