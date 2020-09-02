@@ -16,6 +16,21 @@ knitr::opts_chunk$set(
 )
 ```
 
+The goal of this package is to print data summary statistics on a boxplot. This can be done in ggplot2 or in Base R. 
+
 ```{r setup}
 library(test.package)
+```
+
+To start, we can plot a function in base R using the box_lbls command. 
+
+```{r}
+x <- runif(1000, 0, 10)
+box_lbls(x, color = "pink")
+```
+
+```{r}
+x <- runif(1000, 0, 10)
+class(x) <- "samantha"
+ggbox_lbls(x)
 ```
