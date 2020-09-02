@@ -19,8 +19,8 @@
 #' box_lbls(x, color = "lightblue")
 #'
 
-box_lbls <- function(x, color = NULL) {
-    boxplot(x, col = 'lightblue')
+box_lbls <- function(x, color = 'lightblue') {
+    boxplot(x, col = color)
     text(x = 0.65, y = median(x), labels = paste("Median = ", round(median(x), 2)))
     text(x = 0.65, y = quantile(x, 0.25), labels = paste("Q1 = ", round(quantile(x, 0.25),2)))
     text(x = 0.65, y = quantile(x, 0.75), labels = paste("Q3 = ", round(quantile(x, 0.75),2)))

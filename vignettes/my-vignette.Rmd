@@ -26,7 +26,7 @@ To start, we can plot a function in base R using the box_lbls command.
 
 ```{r}
 x <- runif(1000, 0, 10)
-box_lbls(x, color = "pink")
+box_lbls(x, col = "pink")
 ```
 
 ```{r}
